@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Orto-Care — Индивидуальные ортопедические стельки</title>
+  <meta name="description" content="Стелька, созданная точно под вашу стопу. 250 000 точек замера, врач-ортопед, готово за 3 дня."/>
+  <link rel="stylesheet" href="landing.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-name">Orto-Care</span>
+        <span class="nav__logo-sub">Бережная ортопедия</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#process">Как это работает</a>
+        <a href="#material">Как создаётся</a>
+        <a href="#segments">Кому подходит</a>
+        <a href="#faq">Вопросы и ответы</a>
+        <a href="#locations" class="nav__cta">Найти точку →</a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__mobile" id="mobileMenu">
+      <a href="#process">Как это работает</a>
+      <a href="#material">Как создаётся</a>
+      <a href="#segments">Кому подходит</a>
+      <a href="#faq">Вопросы и ответы</a>
+      <a href="#locations">Найти точку →</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero__inner">
+
+      <div class="hero__left">
+        <div class="hero__badge">⚡ Готово за 3 дня</div>
+
+        <h1 class="hero__title">
+          Стелька,&nbsp;созданная<br>
+          <span class="hl">точно</span>&nbsp;под вашу&nbsp;стопу
+        </h1>
+
+        <p class="hero__subtitle">
+          На основе объёмной 3D-модели из 250&nbsp;000 точек замера — не размера, не шаблона
+        </p>
+        <p class="hero__text">
+          Не аптечная подкладка и не стандартный размер. Ваша стопа сканируется в объёме, врач проектирует стельку под неё, станок вытачивает с точностью до миллиметра.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#locations" class="btn btn--primary">Найти точку сканирования →</a>
+          <a href="#process" class="btn btn--ghost">Как это работает ↓</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-val">3 дня</div>
+            <div class="hero__stat-label">Изготовление</div>
+            <div class="hero__stat-sub">у других от 14</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-val">250K</div>
+            <div class="hero__stat-label">Точек замера</div>
+            <div class="hero__stat-sub">один плоский снимок у других</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-val">7–9K ₽</div>
+            <div class="hero__stat-label">Цена</div>
+            <div class="hero__stat-sub">при вдвое большей ценности</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-val">с 2020</div>
+            <div class="hero__stat-label">Производство</div>
+            <div class="hero__stat-sub">полный цикл, своё</div>
+          </div>
+        </div>
+      </div><!-- /hero__left -->
+
+      <div class="hero__visual">
+        <div class="contour-wrap">
+          <!-- Contour topographic visualization of a 3D foot scan -->
+          <svg viewBox="0 0 200 340" xmlns="http://www.w3.org/2000/svg" aria-label="3D-модель стопы">
+            <defs>
+              <path id="fp" d="M 48 105 C 44 87 50 72 64 68 C 82 63 120 63 138 70 C 152 76 158 90 154 106 C 158 132 162 168 156 206 C 148 256 130 284 104 286 C 78 286 60 258 54 208 C 46 166 46 136 48 105 Z"/>
+            </defs>
+            <!-- Outermost glow ring -->
+            <use href="#fp" transform="translate(104,177) scale(1.22) translate(-104,-177)"
+                 fill="rgba(44,94,191,0.035)" stroke="none"/>
+            <!-- Contour lines: 6 levels, outside → inside -->
+            <use href="#fp" transform="translate(104,177) scale(1.13) translate(-104,-177)"
+                 fill="rgba(44,94,191,0.05)" stroke="rgba(44,94,191,0.12)" stroke-width="1" fill-rule="evenodd"/>
+            <use href="#fp" transform="translate(104,177) scale(1.06) translate(-104,-177)"
+                 fill="rgba(44,94,191,0.08)" stroke="rgba(44,94,191,0.18)" stroke-width="1"/>
+            <use href="#fp"
+                 fill="rgba(44,94,191,0.12)" stroke="rgba(44,94,191,0.26)" stroke-width="1"/>
+            <use href="#fp" transform="translate(104,177) scale(0.87) translate(-104,-177)"
+                 fill="rgba(44,94,191,0.18)" stroke="rgba(44,94,191,0.36)" stroke-width="1.2"/>
+            <use href="#fp" transform="translate(104,177) scale(0.73) translate(-104,-177)"
+                 fill="rgba(44,94,191,0.27)" stroke="rgba(44,94,191,0.48)" stroke-width="1.5"/>
+            <use href="#fp" transform="translate(104,177) scale(0.57) translate(-104,-177)"
+                 fill="rgba(44,94,191,0.38)" stroke="rgba(44,94,191,0.65)" stroke-width="2"/>
+            <!-- Toe bumps (contour, same nesting) -->
+            <ellipse cx="56" cy="52" rx="14" ry="18" fill="rgba(44,94,191,0.08)" stroke="rgba(44,94,191,0.18)" stroke-width="1"/>
+            <ellipse cx="56" cy="52" rx="9"  ry="12" fill="rgba(44,94,191,0.2)"  stroke="rgba(44,94,191,0.38)" stroke-width="1.2"/>
+            <ellipse cx="78" cy="42" rx="11" ry="15" fill="rgba(44,94,191,0.08)" stroke="rgba(44,94,191,0.18)" stroke-width="1"/>
+            <ellipse cx="78" cy="42" rx="7"  ry="10" fill="rgba(44,94,191,0.2)"  stroke="rgba(44,94,191,0.38)" stroke-width="1.2"/>
+            <ellipse cx="100" cy="38" rx="10" ry="14" fill="rgba(44,94,191,0.08)" stroke="rgba(44,94,191,0.18)" stroke-width="1"/>
+            <ellipse cx="100" cy="38" rx="6"  ry="9"  fill="rgba(44,94,191,0.2)"  stroke="rgba(44,94,191,0.38)" stroke-width="1.2"/>
+            <ellipse cx="122" cy="42" rx="9"  ry="13" fill="rgba(44,94,191,0.08)" stroke="rgba(44,94,191,0.18)" stroke-width="1"/>
+            <ellipse cx="122" cy="42" rx="6"  ry="8"  fill="rgba(44,94,191,0.2)"  stroke="rgba(44,94,191,0.38)" stroke-width="1.2"/>
+            <ellipse cx="140" cy="52" rx="8"  ry="11" fill="rgba(44,94,191,0.08)" stroke="rgba(44,94,191,0.18)" stroke-width="1"/>
+            <ellipse cx="140" cy="52" rx="5"  ry="7"  fill="rgba(44,94,191,0.2)"  stroke="rgba(44,94,191,0.38)" stroke-width="1.2"/>
+            <!-- Scan points dot cloud -->
+            <g fill="rgba(44,94,191,0.45)" opacity="0.7">
+              <circle cx="80"  cy="100" r="1.2"/><circle cx="105" cy="95"  r="1.2"/>
+              <circle cx="130" cy="105" r="1.2"/><circle cx="68"  cy="120" r="1.2"/>
+              <circle cx="118" cy="118" r="1.2"/><circle cx="90"  cy="140" r="1.2"/>
+              <circle cx="60"  cy="155" r="1.2"/><circle cx="145" cy="150" r="1.2"/>
+              <circle cx="100" cy="165" r="1.2"/><circle cx="72"  cy="175" r="1.2"/>
+              <circle cx="130" cy="170" r="1.2"/><circle cx="86"  cy="195" r="1.2"/>
+              <circle cx="114" cy="195" r="1.2"/><circle cx="65"  cy="210" r="1.2"/>
+              <circle cx="140" cy="205" r="1.2"/><circle cx="96"  cy="225" r="1.2"/>
+              <circle cx="74"  cy="240" r="1.2"/><circle cx="120" cy="238" r="1.2"/>
+              <circle cx="104" cy="255" r="1.2"/><circle cx="88"  cy="270" r="1.2"/>
+              <circle cx="56"  cy="80"  r="1.2"/><circle cx="148" cy="135" r="1.2"/>
+              <circle cx="52"  cy="180" r="1.2"/><circle cx="78"  cy="155" r="1.2"/>
+            </g>
+          </svg>
+          <div class="contour-label">250 000 точек замера</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     B2 — СРАВНЕНИЕ: ОНИ vs МЫ
+════════════════════════════════════════════════════════ -->
+<section class="section section--alt" id="problems">
+  <div class="container">
+    <span class="section__eyebrow">Проблема рынка</span>
+    <h2 class="section__title">Большинство «индивидуальных» стелек — не такие уж индивидуальные</h2>
+    <p class="section__sub">Вот что обычно скрывается за красивыми словами</p>
+
+    <div class="ct-wrap">
+      <div class="ct-head">
+        <div class="ct-head-cell ct-head-cell--topic"></div>
+        <div class="ct-head-cell ct-head-cell--them">❌ Везде</div>
+        <div class="ct-head-cell ct-head-cell--us">✅ Orto-Care</div>
+      </div>
+
+      <div class="ct-row">
+        <div class="ct-cell ct-cell--topic">
+          <span class="t-icon">📐</span>
+          <span>Сканирование</span>
+        </div>
+        <div class="ct-cell ct-cell--them">
+          Плоский оттиск стопы снизу. Не видит высоту свода, не знает, где вы нагружаете ногу сильнее всего. Делает «среднюю» стельку для вашего размера — не для вашей ноги.
+        </div>
+        <div class="ct-cell ct-cell--us">
+          Полная объёмная модель стопы. Видно всё: своды, рельеф, зоны давления. Стелька повторяет <strong>именно вашу ногу</strong> — не чужую.
+        </div>
+      </div>
+
+      <div class="ct-row">
+        <div class="ct-cell ct-cell--topic">
+          <span class="t-icon">🩺</span>
+          <span>Кто проектирует</span>
+        </div>
+        <div class="ct-cell ct-cell--them">
+          Стельку подгоняет сотрудник магазина прямо при вас — за несколько минут, под давлением вашего веса или с помощью разогрева.
+        </div>
+        <div class="ct-cell ct-cell--us">
+          Стельку проектирует <strong>врач-ортопед</strong>. Удалённо, в авторском ПО, по вашему скану. Без спешки. Без угадывания.
+        </div>
+      </div>
+
+      <div class="ct-row">
+        <div class="ct-cell ct-cell--topic">
+          <span class="t-icon">⏱</span>
+          <span>Срок и результат</span>
+        </div>
+        <div class="ct-cell ct-cell--them">
+          Ждёте от двух недель. Получаете изделие, которое через месяц теряет форму и перестаёт работать.
+        </div>
+        <div class="ct-cell ct-cell--us">
+          Готово за <strong>3 дня</strong>. Материал рассчитан на 6 месяцев активного использования — и мы предупреждаем заранее, когда пора обновить.
+        </div>
+      </div>
+    </div>
+
+    <div class="ct-note">
+      💬 Если вам говорят «3D» — попросите показать объёмную модель вашей стопы на экране. Если её нет — это не 3D.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     B3 — ТЕХНОЛОГИЯ
+════════════════════════════════════════════════════════ -->
+<section class="section" id="technology">
+  <div class="container">
+    <span class="section__eyebrow">Технология</span>
+    <h2 class="section__title">Покажем вашу стопу так, как её никто раньше не показывал</h2>
+    <p class="section__sub">Слово «3D-сканирование» на рынке ортопедии сильно обесценилось. Смотрите разницу сами.</p>
+
+    <div class="tech-split">
+      <div class="tech-panel tech-panel--them">
+        <div class="tech-tag tech-tag--them">❌ Как делают другие</div>
+        <div class="tech-visual tech-visual--them">
+          <!-- Flat 2D print visualization -->
+          <svg viewBox="0 0 160 140" width="160" height="140" xmlns="http://www.w3.org/2000/svg">
+            <!-- Flat silhouette (2D, no depth) -->
+            <defs>
+              <clipPath id="flat-clip">
+                <path d="M 30 50 C 28 36 34 26 44 24 C 58 20 102 20 116 26 C 126 32 130 44 126 52 C 128 70 130 92 124 112 C 116 128 100 138 80 138 C 60 138 44 126 36 110 C 28 90 28 70 30 50 Z"/>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#flat-clip)">
+              <rect width="160" height="140" fill="rgba(255,255,255,0.12)"/>
+            </g>
+            <path d="M 30 50 C 28 36 34 26 44 24 C 58 20 102 20 116 26 C 126 32 130 44 126 52 C 128 70 130 92 124 112 C 116 128 100 138 80 138 C 60 138 44 126 36 110 C 28 90 28 70 30 50 Z"
+                  fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+            <!-- Flat = just an outline, no depth cues -->
+            <ellipse cx="52" cy="16" rx="12" ry="10" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+            <ellipse cx="68" cy="10" rx="9"  ry="8"  fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+            <ellipse cx="84" cy="8"  rx="8"  ry="7"  fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+            <ellipse cx="100" cy="10" rx="7" ry="7"  fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+            <ellipse cx="114" cy="16" rx="6" ry="6"  fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+            <text x="80" y="128" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.3)" font-family="system-ui">2D · Один слой</text>
+          </svg>
+        </div>
+        <h3>Плоский оттиск стопы снизу</h3>
+        <p>Снимок в одной плоскости. Не видно, где у вас высокий или низкий свод. Не видно, как распределяется нагрузка.</p>
+        <div class="tech-result tech-result--them">
+          Итог: стелька сделана по вашему размеру — но не по вашей стопе.
+        </div>
+      </div>
+
+      <div class="tech-panel tech-panel--us">
+        <div class="tech-tag tech-tag--us">✅ Как делаем мы</div>
+        <div class="tech-visual tech-visual--us">
+          <!-- 3D mesh / point cloud visualization -->
+          <svg viewBox="0 0 200 150" width="200" height="150" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="mesh-fp" d="M 40 70 C 36 52 42 38 58 34 C 76 28 126 28 144 36 C 158 44 164 58 158 72 C 162 94 164 118 156 138 C 144 152 122 160 100 160 C 78 160 56 152 44 136 C 32 118 36 96 40 70 Z"/>
+            </defs>
+            <!-- 3D depth layers (perspective offset) -->
+            <use href="#mesh-fp" transform="translate(8,6) scale(0.95)"
+                 fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+            <use href="#mesh-fp" transform="translate(4,3) scale(0.975)"
+                 fill="rgba(255,255,255,0.09)" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+            <use href="#mesh-fp"
+                 fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+            <!-- Mesh grid lines -->
+            <g stroke="rgba(255,255,255,0.2)" stroke-width="0.8" clip-path="url(#mesh-clip)">
+              <line x1="60"  y1="30"  x2="44"  y2="140"/>
+              <line x1="80"  y1="28"  x2="64"  y2="160"/>
+              <line x1="100" y1="28"  x2="84"  y2="162"/>
+              <line x1="120" y1="28"  x2="104" y2="162"/>
+              <line x1="140" y1="32"  x2="124" y2="158"/>
+              <line x1="40"  y1="60"  x2="158" y2="70"/>
+              <line x1="36"  y1="90"  x2="158" y2="100"/>
+              <line x1="38"  y1="120" x2="154" y2="130"/>
+            </g>
+            <!-- Dense point cloud -->
+            <g fill="rgba(255,255,255,0.7)">
+              <circle cx="60" cy="46" r="1.5"/><circle cx="76" cy="38" r="1.5"/>
+              <circle cx="96" cy="35" r="1.5"/><circle cx="116" cy="38" r="1.5"/>
+              <circle cx="134" cy="46" r="1.5"/><circle cx="50" cy="64" r="1.5"/>
+              <circle cx="70" cy="58" r="1.5"/><circle cx="90" cy="55" r="1.5"/>
+              <circle cx="110" cy="58" r="1.5"/><circle cx="130" cy="64" r="1.5"/>
+              <circle cx="148" cy="72" r="1.5"/><circle cx="44" cy="82" r="1.5"/>
+              <circle cx="64" cy="78" r="1.5"/><circle cx="84" cy="76" r="1.5"/>
+              <circle cx="104" cy="76" r="1.5"/><circle cx="124" cy="78" r="1.5"/>
+              <circle cx="144" cy="84" r="1.5"/><circle cx="48" cy="100" r="1.5"/>
+              <circle cx="68" cy="96" r="1.5"/><circle cx="88" cy="94" r="1.5"/>
+              <circle cx="108" cy="95" r="1.5"/><circle cx="128" cy="98" r="1.5"/>
+              <circle cx="146" cy="105" r="1.5"/><circle cx="52" cy="118" r="1.5"/>
+              <circle cx="72" cy="116" r="1.5"/><circle cx="92" cy="114" r="1.5"/>
+              <circle cx="112" cy="116" r="1.5"/><circle cx="132" cy="120" r="1.5"/>
+              <circle cx="60" cy="138" r="1.5"/><circle cx="80" cy="136" r="1.5"/>
+              <circle cx="100" cy="138" r="1.5"/><circle cx="120" cy="140" r="1.5"/>
+            </g>
+            <text x="100" y="178" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)" font-family="system-ui">250 000 точек · Полный объём</text>
+          </svg>
+        </div>
+        <h3>Полигональная объёмная модель</h3>
+        <p>250 000 точек замера. Полный объём. Та же технология сканирования, что Apple использует в iPhone и iPad — только теперь для вашей стопы.</p>
+        <div class="tech-result tech-result--us">
+          Итог: стелька сделана по вашей ноге. Буквально.
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-stripe">
+      <div class="trust-stripe__icon">🔒</div>
+      <div>
+        <div class="trust-stripe__title">Ваша модель сохраняется у нас навсегда</div>
+        <p class="trust-stripe__text">Через полгода или год — при повторном заказе не нужно приходить на сканирование снова. Просто напишите нам, и мы уже знаем вашу стопу.</p>
+        <div class="trust-stripe__sub">Один раз отсканировались — навсегда с нами</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     B4 — ДО И ПОСЛЕ (heatmaps)
+════════════════════════════════════════════════════════ -->
+<section class="section section--alt" id="results">
+  <div class="container">
+    <span class="section__eyebrow">До и После</span>
+    <h2 class="section__title">Посмотрите, как распределяется нагрузка на вашу стопу — и что меняется</h2>
+    <p class="section__sub">Красное — там, где перегрузка. Наша задача — убрать красное.</p>
+
+    <div class="heatmap-pair">
+
+      <!-- BEFORE -->
+      <div class="heatmap-card heatmap-card--bad">
+        <div class="heatmap-card__badge">🔴 Без стельки</div>
+        <div class="heatmap-card__body">
+          <div class="heatmap-card__foot">
+            <svg viewBox="0 0 130 240" xmlns="http://www.w3.org/2000/svg" aria-label="Тепловая карта без стельки">
+              <defs>
+                <clipPath id="hm-before">
+                  <path d="M 28 80 C 24 62 30 48 44 44 C 60 39 92 39 106 46 C 118 52 122 66 118 82 C 122 106 126 138 120 168 C 112 204 96 224 68 226 C 40 226 24 204 18 170 C 10 138 14 108 18 90 C 22 85 24 82 28 80 Z"/>
+                  <ellipse cx="32" cy="28" rx="12" ry="16"/>
+                  <ellipse cx="52" cy="18" rx="10" ry="14"/>
+                  <ellipse cx="70" cy="14" rx="9"  ry="13"/>
+                  <ellipse cx="88" cy="18" rx="8"  ry="12"/>
+                  <ellipse cx="104" cy="28" rx="7" ry="10"/>
+                </clipPath>
+                <!-- Heel hotspot -->
+                <radialGradient id="rg-heel-hot" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(67,198) scale(46,38)">
+                  <stop offset="0%"   stop-color="#D32F2F" stop-opacity="0.96"/>
+                  <stop offset="30%"  stop-color="#FF5722" stop-opacity="0.78"/>
+                  <stop offset="65%"  stop-color="#FF9800" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#FFEB3B" stop-opacity="0"/>
+                </radialGradient>
+                <!-- Ball of foot hotspot -->
+                <radialGradient id="rg-ball-hot" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(68,76) scale(42,32)">
+                  <stop offset="0%"   stop-color="#C62828" stop-opacity="0.9"/>
+                  <stop offset="40%"  stop-color="#E64A19" stop-opacity="0.65"/>
+                  <stop offset="80%"  stop-color="#FF8F00" stop-opacity="0.2"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+                <!-- Toes hotspot -->
+                <radialGradient id="rg-toes-hot" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(68,20) scale(50,22)">
+                  <stop offset="0%"   stop-color="#E53935" stop-opacity="0.6"/>
+                  <stop offset="60%"  stop-color="#FF8F00" stop-opacity="0.25"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+                <!-- Arch cool -->
+                <radialGradient id="rg-arch-cool" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20,138) scale(18,36)">
+                  <stop offset="0%"   stop-color="#1565C0" stop-opacity="0.45"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+              </defs>
+              <!-- Foot fill (clipped) -->
+              <g clip-path="url(#hm-before)">
+                <rect width="130" height="240" fill="#F5DDD4"/>
+                <rect width="130" height="240" fill="url(#rg-heel-hot)"/>
+                <rect width="130" height="240" fill="url(#rg-ball-hot)"/>
+                <rect width="130" height="240" fill="url(#rg-toes-hot)"/>
+                <rect width="130" height="240" fill="url(#rg-arch-cool)"/>
+              </g>
+              <!-- Foot outline -->
+              <path d="M 28 80 C 24 62 30 48 44 44 C 60 39 92 39 106 46 C 118 52 122 66 118 82 C 122 106 126 138 120 168 C 112 204 96 224 68 226 C 40 226 24 204 18 170 C 10 138 14 108 18 90 C 22 85 24 82 28 80 Z"
+                    fill="none" stroke="rgba(120,70,50,0.3)" stroke-width="1.5"/>
+              <ellipse cx="32" cy="28" rx="12" ry="16" fill="none" stroke="rgba(120,70,50,0.3)" stroke-width="1.5"/>
+              <ellipse cx="52" cy="18" rx="10" ry="14" fill="none" stroke="rgba(120,70,50,0.3)" stroke-width="1.5"/>
+              <ellipse cx="70" cy="14" rx="9"  ry="13" fill="none" stroke="rgba(120,70,50,0.3)" stroke-width="1.5"/>
+              <ellipse cx="88" cy="18" rx="8"  ry="12" fill="none" stroke="rgba(120,70,50,0.3)" stroke-width="1.5"/>
+              <ellipse cx="104" cy="28" rx="7" ry="10" fill="none" stroke="rgba(120,70,50,0.3)" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="heatmap-card__info">
+            <div class="heatmap-card__zones">
+              <div class="z-label"><span class="z-dot" style="background:#D32F2F"></span>Пятка — перегрузка</div>
+              <div class="z-label"><span class="z-dot" style="background:#E64A19"></span>Передний отдел — перегрузка</div>
+              <div class="z-label"><span class="z-dot" style="background:#1565C0"></span>Свод — нет опоры</div>
+            </div>
+            <p class="heatmap-card__text">
+              Нагрузка сосредоточена в двух точках. Нога устаёт быстрее. Вы начинаете немного менять походку, сами того не замечая — и через время начинает болеть колено или поясница.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AFTER -->
+      <div class="heatmap-card heatmap-card--good">
+        <div class="heatmap-card__badge">🟢 С индивидуальной стелькой Orto-Care</div>
+        <div class="heatmap-card__body">
+          <div class="heatmap-card__foot">
+            <svg viewBox="0 0 130 240" xmlns="http://www.w3.org/2000/svg" aria-label="Тепловая карта со стелькой">
+              <defs>
+                <clipPath id="hm-after">
+                  <path d="M 28 80 C 24 62 30 48 44 44 C 60 39 92 39 106 46 C 118 52 122 66 118 82 C 122 106 126 138 120 168 C 112 204 96 224 68 226 C 40 226 24 204 18 170 C 10 138 14 108 18 90 C 22 85 24 82 28 80 Z"/>
+                  <ellipse cx="32" cy="28" rx="12" ry="16"/>
+                  <ellipse cx="52" cy="18" rx="10" ry="14"/>
+                  <ellipse cx="70" cy="14" rx="9"  ry="13"/>
+                  <ellipse cx="88" cy="18" rx="8"  ry="12"/>
+                  <ellipse cx="104" cy="28" rx="7" ry="10"/>
+                </clipPath>
+                <!-- Even heel - green/teal -->
+                <radialGradient id="rg-heel-ok" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(67,198) scale(50,42)">
+                  <stop offset="0%"   stop-color="#1B5E20" stop-opacity="0.65"/>
+                  <stop offset="50%"  stop-color="#26C6DA" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+                <!-- Distributed forefoot -->
+                <radialGradient id="rg-fore-ok" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(68,76) scale(50,38)">
+                  <stop offset="0%"   stop-color="#1565C0" stop-opacity="0.55"/>
+                  <stop offset="50%"  stop-color="#00ACC1" stop-opacity="0.3"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+                <!-- Arch support - more coverage = positive -->
+                <radialGradient id="rg-arch-ok" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22,138) scale(24,50)">
+                  <stop offset="0%"   stop-color="#00ACC1" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+                <!-- Toes even -->
+                <radialGradient id="rg-toes-ok" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(68,20) scale(50,24)">
+                  <stop offset="0%"   stop-color="#1565C0" stop-opacity="0.4"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+                <!-- Midfoot spread -->
+                <radialGradient id="rg-mid-ok" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(68,140) scale(55,55)">
+                  <stop offset="0%"   stop-color="#43A047" stop-opacity="0.3"/>
+                  <stop offset="100%" stop-color="transparent"/>
+                </radialGradient>
+              </defs>
+              <g clip-path="url(#hm-after)">
+                <rect width="130" height="240" fill="#DCF0F5"/>
+                <rect width="130" height="240" fill="url(#rg-mid-ok)"/>
+                <rect width="130" height="240" fill="url(#rg-heel-ok)"/>
+                <rect width="130" height="240" fill="url(#rg-fore-ok)"/>
+                <rect width="130" height="240" fill="url(#rg-arch-ok)"/>
+                <rect width="130" height="240" fill="url(#rg-toes-ok)"/>
+              </g>
+              <path d="M 28 80 C 24 62 30 48 44 44 C 60 39 92 39 106 46 C 118 52 122 66 118 82 C 122 106 126 138 120 168 C 112 204 96 224 68 226 C 40 226 24 204 18 170 C 10 138 14 108 18 90 C 22 85 24 82 28 80 Z"
+                    fill="none" stroke="rgba(0,80,60,0.25)" stroke-width="1.5"/>
+              <ellipse cx="32" cy="28" rx="12" ry="16" fill="none" stroke="rgba(0,80,60,0.25)" stroke-width="1.5"/>
+              <ellipse cx="52" cy="18" rx="10" ry="14" fill="none" stroke="rgba(0,80,60,0.25)" stroke-width="1.5"/>
+              <ellipse cx="70" cy="14" rx="9"  ry="13" fill="none" stroke="rgba(0,80,60,0.25)" stroke-width="1.5"/>
+              <ellipse cx="88" cy="18" rx="8"  ry="12" fill="none" stroke="rgba(0,80,60,0.25)" stroke-width="1.5"/>
+              <ellipse cx="104" cy="28" rx="7" ry="10" fill="none" stroke="rgba(0,80,60,0.25)" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="heatmap-card__info">
+            <div class="heatmap-card__zones">
+              <div class="z-label"><span class="z-dot" style="background:#1B5E20"></span>Пятка — норма</div>
+              <div class="z-label"><span class="z-dot" style="background:#1565C0"></span>Передний отдел — улучшение</div>
+              <div class="z-label"><span class="z-dot" style="background:#00ACC1"></span>Свод — поддержан</div>
+            </div>
+            <p class="heatmap-card__text">
+              Нагрузка распределена равномерно. Особенно заметно в переднем отделе — именно там обычно концентрируется напряжение при беге. Нога работает так, как задумано природой.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /heatmap-pair -->
+
+    <div class="repeat-block">
+      <div class="repeat-block__icon">📊</div>
+      <div>
+        <div class="repeat-block__title">Видите разницу сейчас — увидите снова при следующем заказе</div>
+        <p class="repeat-block__text">Стопа меняется со временем: нагрузка смещается, форма свода адаптируется. При повторном заказе через 6 месяцев врач сравнит новый скан с исходным — вы увидите, как стопа изменилась к лучшему.</p>
+      </div>
+    </div>
+
+    <div class="data-note">
+      Эти карты — не иллюстрация для сайта. Это реальные данные из нашего ПО. Такую карту строит врач для каждого заказа — прежде чем начать проектировать вашу стельку.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     B5 — ПРОЦЕСС
+════════════════════════════════════════════════════════ -->
+<section class="section" id="process">
+  <div class="container">
+    <span class="section__eyebrow">Процесс</span>
+    <h2 class="section__title">От сканирования до стельки — 3 дня. Вот каждый шаг.</h2>
+    <p class="section__sub">Скорость — не компромисс. Это результат того, что весь процесс идёт без бумаги, без очередей и без ожидания. Автоматика работает быстрее рук.</p>
+
+    <div class="timeline">
+      <div class="timeline__track"></div>
+      <div class="timeline__steps">
+        <div class="tl-step">
+          <div class="tl-step__num">1</div>
+          <div class="tl-step__icon">📱</div>
+          <div class="tl-step__day">День 1</div>
+          <div class="tl-step__title">Скан за 15 минут</div>
+          <p class="tl-step__text">Приходите в любую точку-партнёр — только iPad. Сотрудник снимает объёмный скан вашей стопы без давления, без гипса, без ожидания. Данные сразу уходят к нам.</p>
+          <div class="tl-step__note">Никакой подготовки. Просто прийти.</div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-step__num">2</div>
+          <div class="tl-step__icon">🩺</div>
+          <div class="tl-step__day">День 1–2</div>
+          <div class="tl-step__title">Врач строит вашу стельку</div>
+          <p class="tl-step__text">Врач-ортопед открывает ваш скан. Видит, где у вас нагрузка, где свод, какая задача — спорт, усталость или боль. Проектирует стельку именно под вас.</p>
+          <div class="tl-step__note">Не сотрудник магазина. Врач-ортопед удалённо.</div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-step__num">3</div>
+          <div class="tl-step__icon">⚙️</div>
+          <div class="tl-step__day">День 2–3</div>
+          <div class="tl-step__title">Станок вытачивает под вас</div>
+          <p class="tl-step__text">Готовая модель уходит на роботизированный станок. Стелька вытачивается из медицинского материала с точностью до миллиметра — без ручного труда и без ошибок на глаз.</p>
+          <div class="tl-step__note">Точность до миллиметра. Не «приблизительно».</div>
+        </div>
+        <div class="tl-step">
+          <div class="tl-step__num">4</div>
+          <div class="tl-step__icon">📦</div>
+          <div class="tl-step__day">+2–4 дня</div>
+          <div class="tl-step__title">К вам, где бы вы ни были</div>
+          <p class="tl-step__text">Готовая стелька отправляется курьерской службой. Или забираете на месте, если вы в Санкт-Петербурге, Москве, Сочи или Тамбове.</p>
+          <div class="tl-step__note">Доставка в любую точку России</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline__summary-wrap">
+      <div class="timeline__summary">
+        <strong>3 рабочих дня</strong> на изготовление · До 7 дней с доставкой до вашей двери
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     B6 — МАТЕРИАЛ
+════════════════════════════════════════════════════════ -->
+<section class="section section--alt" id="material">
+  <div class="container">
+    <span class="section__eyebrow">Материал</span>
+    <h2 class="section__title">Мягкость там, где нужна мягкость. Жёсткость там, где нужна жёсткость.</h2>
+    <p class="section__sub">Один и тот же материал — разная плотность в разных зонах. Это возможно только потому, что стелька проектируется под конкретную стопу, а не отливается в форму.</p>
+
+    <div class="material-layout">
+      <div class="zones-art">
+        <!-- Insole zones diagram -->
+        <svg viewBox="0 0 200 340" xmlns="http://www.w3.org/2000/svg" aria-label="Зоны стельки">
+          <defs>
+            <path id="insole" d="M 52 110 C 46 88 54 70 70 65 C 90 58 130 58 150 68 C 166 76 172 94 166 112 C 170 140 174 178 166 216 C 154 264 132 292 104 294 C 76 294 54 264 46 218 C 36 178 40 145 44 120 C 46 116 48 112 52 110 Z"/>
+          </defs>
+          <!-- Toe area -->
+          <ellipse cx="72"  cy="56" rx="16" ry="22" fill="#EEF2F8" stroke="#DDE3EE" stroke-width="1.5"/>
+          <ellipse cx="96"  cy="44" rx="13" ry="19" fill="#EEF2F8" stroke="#DDE3EE" stroke-width="1.5"/>
+          <ellipse cx="118" cy="40" rx="12" ry="17" fill="#EEF2F8" stroke="#DDE3EE" stroke-width="1.5"/>
+          <ellipse cx="140" cy="44" rx="11" ry="16" fill="#EEF2F8" stroke="#DDE3EE" stroke-width="1.5"/>
+          <ellipse cx="158" cy="56" rx="10" ry="14" fill="#EEF2F8" stroke="#DDE3EE" stroke-width="1.5"/>
+          <!-- Insole body -->
+          <use href="#insole" fill="#EEF2F8" stroke="#DDE3EE" stroke-width="1.5"/>
+          <!-- Zones colored overlays (clipped) -->
+          <g clip-path="url(#insole-clip)">
+            <!-- Heel zone: blue -->
+            <ellipse cx="104" cy="258" rx="52" ry="40" fill="rgba(44,94,191,0.18)"/>
+            <!-- Arch zone: orange -->
+            <ellipse cx="62"  cy="178" rx="28" ry="44" fill="rgba(232,126,62,0.18)"/>
+            <!-- Forefoot zone: green -->
+            <ellipse cx="108" cy="112" rx="58" ry="36" fill="rgba(46,125,90,0.18)"/>
+          </g>
+          <defs>
+            <clipPath id="insole-clip">
+              <use href="#insole"/>
+            </clipPath>
+          </defs>
+          <!-- Zone marker dots -->
+          <circle cx="104" cy="258" r="7" fill="#2C5EBF"/>
+          <circle cx="62"  cy="178" r="7" fill="#E87E3E"/>
+          <circle cx="108" cy="112" r="7" fill="#2E7D5A"/>
+          <!-- Connecting lines to labels -->
+          <line x1="111" y1="258" x2="160" y2="258" stroke="#2C5EBF" stroke-width="1.5" stroke-dasharray="3,3"/>
+          <line x1="69"  y1="178" x2="18"  y2="178" stroke="#E87E3E" stroke-width="1.5" stroke-dasharray="3,3"/>
+          <line x1="115" y1="112" x2="170" y2="112" stroke="#2E7D5A" stroke-width="1.5" stroke-dasharray="3,3"/>
+        </svg>
+      </div>
+
+      <div>
+        <div class="zones-list">
+          <div class="zone-item">
+            <div class="zone-item__dot zone-item__dot--heel"></div>
+            <div>
+              <div class="zone-item__title">Пятка — держит и стабилизирует</div>
+              <p class="zone-item__text">Плотная зона. Контролирует положение стопы при каждом шаге. Не даёт «заваливаться».</p>
+            </div>
+          </div>
+          <div class="zone-item">
+            <div class="zone-item__dot zone-item__dot--arch"></div>
+            <div>
+              <div class="zone-item__title">Свод — поддерживает ваш свод, не средний</div>
+              <p class="zone-item__text">Высота и форма рассчитаны по вашему скану. Не «высокий» и не «низкий» — именно ваш.</p>
+            </div>
+          </div>
+          <div class="zone-item">
+            <div class="zone-item__dot zone-item__dot--fore"></div>
+            <div>
+              <div class="zone-item__title">Передний отдел — смягчает каждый шаг</div>
+              <p class="zone-item__text">Более мягкая зона гасит нагрузку при толчке. Особенно важно при беге и долгой ходьбе. Именно здесь чаще всего скапливается напряжение — и именно здесь разница видна лучше всего.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="props-list">
+          <div class="prop-item">
+            <div class="prop-item__icon">🧼</div>
+            <div>
+              <div class="prop-item__title">Не впитывает запахи</div>
+              <p class="prop-item__text">Материал не имеет открытых пор — влага и запахи не проникают внутрь. Достаточно протереть влажной салфеткой.</p>
+            </div>
+          </div>
+          <div class="prop-item">
+            <div class="prop-item__icon">🛡</div>
+            <div>
+              <div class="prop-item__title">Держит форму 6 месяцев</div>
+              <p class="prop-item__text">Материал сохраняет упругость в течение полугода. После — как пружина, которую долго сжимали: пора обновить.</p>
+            </div>
+          </div>
+          <div class="prop-item">
+            <div class="prop-item__icon">⚡</div>
+            <div>
+              <div class="prop-item__title">Комфорт с первого дня</div>
+              <p class="prop-item__text">Стелька уже сформирована под вашу стопу. В первые дни ноги адаптируются к правильному положению — и начинают работать эффективнее. Никакого «разнашивания».</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     B7 — КОМУ ПОДХОДИТ
+════════════════════════════════════════════════════════ -->
+<section class="section" id="segments">
+  <div class="container">
+    <span class="section__eyebrow">Для кого</span>
+    <h2 class="section__title">Найдите своё</h2>
+    <p class="section__sub">Одна технология — три разные задачи. Стелька проектируется под вашу цель.</p>
+
+    <div class="seg-stack">
+      <div class="seg-card seg-card--sport">
+        <div class="seg-card__head">
+          <div class="seg-card__icon">🏃</div>
+          <div class="seg-card__title">Спорт</div>
+        </div>
+        <div class="seg-card__body">
+          <p class="seg-card__pains">Боль в стопе после тренировки · Усталость в коленях · Хочется бегать больше — нога не даёт</p>
+          <p class="seg-card__text">Снижает нагрузку на суставы при беге. Лучше амортизирует каждый толчок. Вы бегаете больше — и восстанавливаетесь быстрее.</p>
+          <p class="seg-card__fits"><strong>Подходит:</strong> бегуны, велосипедисты, игровые виды, трейл.</p>
+        </div>
+        <div class="seg-card__right">
+          <a href="#locations" class="btn btn--primary">Это про меня →</a>
+        </div>
+      </div>
+
+      <div class="seg-card seg-card--comfort">
+        <div class="seg-card__head">
+          <div class="seg-card__icon">🚶</div>
+          <div class="seg-card__title">Комфорт</div>
+        </div>
+        <div class="seg-card__body">
+          <p class="seg-card__pains">Ноги гудят к вечеру · Целый день на ногах · Хочется заботиться о здоровье заранее</p>
+          <p class="seg-card__text">Правильно распределяет нагрузку — ноги устают меньше. Профилактика изменений стопы. Как витамины — только для ног.</p>
+          <p class="seg-card__fits"><strong>Подходит:</strong> продавцы, врачи, учителя, путешественники.</p>
+        </div>
+        <div class="seg-card__right">
+          <a href="#locations" class="btn btn--warm">Это про меня →</a>
+        </div>
+      </div>
+
+      <div class="seg-card seg-card--health">
+        <div class="seg-card__head">
+          <div class="seg-card__icon">💊</div>
+          <div class="seg-card__title">Лечение</div>
+        </div>
+        <div class="seg-card__body">
+          <p class="seg-card__pains">Болит пятка по утрам · Сводит стопу · Косточка · Сказали: плоскостопие</p>
+          <p class="seg-card__text">Плоскостопие, пяточная шпора, вальгусная деформация. Стелька проектируется с учётом вашего случая. Есть заключение ортопеда — передайте нам.</p>
+          <p class="seg-card__fits">По направлению или при хронической боли.</p>
+        </div>
+        <div class="seg-card__right">
+          <a href="#locations" class="btn btn--success">Это про меня →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     B8 — FAQ
+════════════════════════════════════════════════════════ -->
+<section class="section section--alt" id="faq">
+  <div class="container">
+    <span class="section__eyebrow section__eyebrow--center" style="display:flex;justify-content:center;">Вопросы и ответы</span>
+    <h2 class="section__title section__title--center">Честные ответы на главные вопросы</h2>
+
+    <div class="faq-wrap">
+      <div class="faq-item">
+        <button class="faq-q" data-faq>
+          У меня дискомфорт в первые дни — это нормально?
+          <span class="faq-icon"><svg viewBox="0 0 14 14"><polyline points="2,4 7,10 12,4"/></svg></span>
+        </button>
+        <div class="faq-a">Наша задача — чтобы дискомфорта не было вовсе. Стелька сформирована точно под вашу стопу, и в норме вы должны почувствовать облегчение уже в первые дни — не дискомфорт. Ноги адаптируются к правильному положению, и часто это ощущается как «непривычно, но лучше». Если что-то беспокоит — напишите нам. Возможна коррекция: быстро и бесплатно.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-faq>
+          Сколько служат стельки и когда менять?
+          <span class="faq-icon"><svg viewBox="0 0 14 14"><polyline points="2,4 7,10 12,4"/></svg></span>
+        </button>
+        <div class="faq-a">Раз в <strong>6 месяцев</strong>. Материал постепенно теряет упругость — как пружина, которую долго сжимали. Плюс ваша стопа меняется: точнее иметь стельку под актуальное состояние. При повторном заказе сканироваться не нужно — ваша модель уже у нас. А ещё при сравнении нового скана со старым будет видно, как изменилась ваша стопа.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-faq>
+          Как ухаживать?
+          <span class="faq-icon"><svg viewBox="0 0 14 14"><polyline points="2,4 7,10 12,4"/></svg></span>
+        </button>
+        <div class="faq-a">Просто. Материал не впитывает влагу и запахи — достаточно протирать влажной салфеткой. Специальные средства, машинная стирка, обработка антисептиком — не нужны.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-faq>
+          Стелька влезет в мою обувь?
+          <span class="faq-icon"><svg viewBox="0 0 14 14"><polyline points="2,4 7,10 12,4"/></svg></span>
+        </button>
+        <div class="faq-a">В большинстве случаев — да. Скажите при сканировании, для какой обуви: это влияет на толщину и профиль. Если обуви несколько — лучше заказать две пары: повторный заказ по вашей модели значительно дешевле. Стелька должна входить без подрезки — если нет, мы исправим.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-faq>
+          Что если не подойдёт?
+          <span class="faq-icon"><svg viewBox="0 0 14 14"><polyline points="2,4 7,10 12,4"/></svg></span>
+        </button>
+        <div class="faq-a">Сначала давайте попробуем исправить — врач смотрит скан повторно и вносит коррективы. Чаще всего это решает вопрос быстрее и лучше. Если стелька изготовлена с производственным дефектом — мы заменим. Напишите нам, разберёмся.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-faq>
+          Почему 3 дня, если у других две недели?
+          <span class="faq-icon"><svg viewBox="0 0 14 14"><polyline points="2,4 7,10 12,4"/></svg></span>
+        </button>
+        <div class="faq-a">Потому что весь процесс — от скана до готового изделия — работает без бумаги, без очередей и без ожидания сырья. Скан уходит напрямую к врачу, врач передаёт модель на станок, станок не стоит в очереди. Это не «быстрее, потому что проще». Это быстрее, потому что автоматизировано.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-faq>
+          Нужно ли направление от врача?
+          <span class="faq-icon"><svg viewBox="0 0 14 14"><polyline points="2,4 7,10 12,4"/></svg></span>
+        </button>
+        <div class="faq-a">Нет. Для «Спорта» и «Комфорта» — просто приходите и объясните задачу. Если есть заключение ортопеда — возьмите с собой: врач учтёт это при проектировании и повысит точность.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     B9 — КАРТА + CTA
+════════════════════════════════════════════════════════ -->
+<section class="cta-section" id="locations">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <div class="loc-list">
+          <div class="loc-item">
+            <div class="loc-item__icon">📍</div>
+            <div>
+              <div class="loc-item__city">Санкт-Петербург</div>
+              <div class="loc-item__detail">Партнёр · Адрес · Часы работы</div>
+            </div>
+          </div>
+          <div class="loc-item">
+            <div class="loc-item__icon">📍</div>
+            <div>
+              <div class="loc-item__city">Москва</div>
+              <div class="loc-item__detail">Лаборатория Бега · Адрес · Часы работы</div>
+            </div>
+          </div>
+          <div class="loc-item">
+            <div class="loc-item__icon">📍</div>
+            <div>
+              <div class="loc-item__city">Сочи</div>
+              <div class="loc-item__detail">Партнёр · Адрес · Часы работы</div>
+            </div>
+          </div>
+          <div class="loc-item">
+            <div class="loc-item__icon">📍</div>
+            <div>
+              <div class="loc-item__city">Тамбов</div>
+              <div class="loc-item__detail">Партнёр · Адрес · Часы работы</div>
+            </div>
+          </div>
+        </div>
+        <p class="loc-note">Сеть партнёров постоянно растёт. Нет вашего города? Напишите нам.</p>
+      </div>
+
+      <div>
+        <h2 class="cta-title">Начните с <span class="hl">15 минут</span></h2>
+        <p class="cta-text">Просто приходите в ближайшую точку. Сканирование занимает 15 минут — без записи за месяц, без предоплаты, без подготовки.</p>
+        <a href="#" class="btn btn--warm btn--full" style="font-size:17px;padding:18px 32px;">
+          Найти ближайшую точку →
+        </a>
+        <div class="cta-badges">
+          <div class="cta-badge"><span class="cta-badge-icon">🔒</span>Ваша модель хранится у нас — повторный заказ без нового сканирования</div>
+          <div class="cta-badge"><span class="cta-badge-icon">⚡</span>Готово за 3 дня</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand-name">Orto-Care</div>
+        <div class="footer__brand-sub">Бережная ортопедия</div>
+        <p class="footer__brand-desc">Индивидуальные стельки полного цикла: от объёмного 3D-сканирования до точного изготовления. С 2020 года.</p>
+      </div>
+      <div>
+        <div class="footer__heading">Навигация</div>
+        <ul class="footer__links">
+          <li><a href="#process">Как это работает</a></li>
+          <li><a href="#material">Как создаётся</a></li>
+          <li><a href="#segments">Кому подходит</a></li>
+          <li><a href="#faq">Вопросы и ответы</a></li>
+          <li><a href="#locations">Точки приёма</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Связаться</div>
+        <ul class="footer__links">
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">WhatsApp</a></li>
+          <li><a href="#">E-mail</a></li>
+        </ul>
+        <p class="footer__contact-note">Ответим в течение рабочего дня</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>® Orto-Care · с 2020 года</span>
+      <div class="footer__bottom-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Условия использования</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://deerflow.tech" target="_blank" class="deerflow-badge">✦ Deerflow</a>
+
+<script src="landing.js"></script>
+</body>
+</html>
