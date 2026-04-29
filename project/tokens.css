@@ -1,0 +1,122 @@
+/* ============================================================
+   ORTO-CARE — Design Tokens
+   Inspired by: bento-grid product showcases, soft medical-care
+   palettes, sky-tinted off-whites with electric-blue accents.
+   ============================================================ */
+
+:root {
+  /* ---------- Color · Neutrals ---------- */
+  --oc-ink-900: #0B1220;        /* Display headings, primary ink */
+  --oc-ink-700: #1F2A3D;        /* Body strong */
+  --oc-ink-500: #4A5568;        /* Body */
+  --oc-ink-400: #6B7689;        /* Body secondary */
+  --oc-ink-300: #98A1B2;        /* Captions, helper */
+  --oc-ink-200: #C9D0DC;        /* Disabled, dividers strong */
+  --oc-ink-100: #E2E7EF;        /* Borders, dividers */
+  --oc-ink-050: #F0F3F8;        /* Surface tinted */
+
+  /* ---------- Color · Surfaces (sky-tinted whites) ---------- */
+  --oc-paper:    #FBFCFE;       /* Page background */
+  --oc-surface:  #FFFFFF;       /* Card */
+  --oc-mist:     #EEF3FA;       /* Soft sky surface — pastel cards */
+  --oc-mist-2:   #E2EBF7;       /* Slightly deeper mist */
+  --oc-cream:    #F4F1EC;       /* Warm off-white accent */
+
+  /* ---------- Color · Brand (Care Blue) ---------- */
+  --oc-blue-50:  #E8F1FF;
+  --oc-blue-100: #CFE0FF;
+  --oc-blue-300: #7BA8F5;
+  --oc-blue-500: #2563EB;       /* Primary action */
+  --oc-blue-600: #1D4FD8;
+  --oc-blue-700: #1740B0;
+  --oc-blue-900: #0C2360;       /* Deep brand background */
+
+  /* ---------- Color · Health accents ---------- */
+  --oc-mint:     #D5EFE3;       /* "Healing" calm */
+  --oc-mint-ink: #156B4C;
+  --oc-coral:    #FFD9CD;       /* Warmth / human */
+  --oc-coral-ink:#9F3A1F;
+  --oc-sand:     #F2E6D0;       /* Cream warm */
+  --oc-sand-ink: #7A5A20;
+
+  /* ---------- Color · State ---------- */
+  --oc-success:  #16A571;
+  --oc-warning:  #E3A008;
+  --oc-danger:   #DC2626;
+
+  /* ---------- Type · Family ---------- */
+  --oc-font-sans:    "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --oc-font-display: "Instrument Serif", "Times New Roman", serif; /* editorial pulls only */
+  --oc-font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* ---------- Type · Scale (1920 reference) ---------- */
+  --oc-text-d1:   88px;   /* hero display */
+  --oc-text-d2:   64px;   /* secondary display */
+  --oc-text-h1:   48px;
+  --oc-text-h2:   36px;
+  --oc-text-h3:   28px;
+  --oc-text-h4:   22px;
+  --oc-text-lg:   18px;
+  --oc-text-md:   16px;
+  --oc-text-sm:   14px;
+  --oc-text-xs:   12px;
+  --oc-text-mc:   11px;   /* micro caps */
+
+  /* ---------- Type · Weight ---------- */
+  --oc-w-light:    300;
+  --oc-w-regular:  400;
+  --oc-w-medium:   500;
+  --oc-w-semibold: 600;
+  --oc-w-bold:     700;
+
+  /* ---------- Spacing (4pt base) ---------- */
+  --oc-s-1:  4px;
+  --oc-s-2:  8px;
+  --oc-s-3:  12px;
+  --oc-s-4:  16px;
+  --oc-s-5:  20px;
+  --oc-s-6:  24px;
+  --oc-s-8:  32px;
+  --oc-s-10: 40px;
+  --oc-s-12: 48px;
+  --oc-s-16: 64px;
+  --oc-s-20: 80px;
+  --oc-s-24: 96px;
+
+  /* ---------- Radius (pill-forward) ---------- */
+  --oc-r-xs:   6px;
+  --oc-r-sm:   10px;
+  --oc-r-md:   16px;
+  --oc-r-lg:   24px;
+  --oc-r-xl:   32px;     /* bento card default */
+  --oc-r-2xl:  44px;     /* hero card */
+  --oc-r-pill: 999px;
+
+  /* ---------- Shadow (soft, low-contrast) ---------- */
+  --oc-shadow-1: 0 1px 2px rgba(11,18,32,0.04), 0 1px 1px rgba(11,18,32,0.03);
+  --oc-shadow-2: 0 4px 14px rgba(11,18,32,0.05), 0 1px 2px rgba(11,18,32,0.04);
+  --oc-shadow-3: 0 18px 40px -12px rgba(11,18,32,0.12), 0 4px 10px rgba(11,18,32,0.04);
+  --oc-shadow-blue: 0 14px 32px -10px rgba(37,99,235,0.45);
+
+  /* ---------- Motion ---------- */
+  --oc-ease:     cubic-bezier(.22,.61,.36,1);
+  --oc-ease-out: cubic-bezier(.16,.84,.44,1);
+  --oc-dur-fast: 140ms;
+  --oc-dur:      220ms;
+  --oc-dur-slow: 420ms;
+
+  /* ---------- Layout ---------- */
+  --oc-grid-gutter: 16px;
+  --oc-content-max: 1200px;
+}
+
+/* ---------- Base resets used by tokens cards ---------- */
+.oc-reset, .oc-reset * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--oc-font-sans);
+  color: var(--oc-ink-900);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

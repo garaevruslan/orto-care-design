@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Orto-Care · Design System</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="tokens.css" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #EEF1F6;
+      font-family: "Inter Tight", system-ui, sans-serif;
+      color: #0B1220;
+      -webkit-font-smoothing: antialiased;
+    }
+    #root { width: 100vw; height: 100vh; }
+  </style>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="ds-foundations.jsx"></script>
+  <script type="text/babel" src="ds-components.jsx"></script>
+
+  <script type="text/babel">
+    const { DesignCanvas, DCSection, DCArtboard } = window;
+
+    function App() {
+      return (
+        <DesignCanvas
+          title="Orto-Care · Design System"
+          subtitle="Bento-first medical care · Sky-tinted neutrals · Care-Blue accent"
+        >
+          <DCSection id="overview" title="Overview">
+            <DCArtboard id="brand" label="Brand overview" width={1200} height={680}>
+              <BrandOverview />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="foundations" title="Foundations · Tokens">
+            <DCArtboard id="color" label="Color · palette" width={1200} height={840}>
+              <ColorPalette />
+            </DCArtboard>
+            <DCArtboard id="type" label="Typography · scale" width={1200} height={1180}>
+              <Typography />
+            </DCArtboard>
+            <DCArtboard id="srs" label="Spacing · Radius · Shadow" width={1200} height={780}>
+              <SpacingRadiusShadow />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="components" title="Components">
+            <DCArtboard id="buttons" label="Buttons & chips" width={1200} height={620}>
+              <Buttons />
+            </DCArtboard>
+            <DCArtboard id="bento" label="Bento feature grid" width={1200} height={780}>
+              <BentoGrid />
+            </DCArtboard>
+            <DCArtboard id="nav" label="Nav · Inputs · Badges" width={1200} height={780}>
+              <NavInputs />
+            </DCArtboard>
+            <DCArtboard id="icons" label="Iconography" width={1200} height={620}>
+              <Iconography />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="patterns" title="Patterns in use">
+            <DCArtboard id="hero" label="Landing-page hero" width={1320} height={760}>
+              <HeroPattern />
+            </DCArtboard>
+          </DCSection>
+        </DesignCanvas>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
+</body>
+</html>
